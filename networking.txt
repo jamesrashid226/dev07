@@ -1,0 +1,96 @@
+IP Addressing & Subnetting
+------------------------
+IP Address    Class     CIDR           Subnet Mask
+120.0.0.0     A         120.0.0.0/8    255.0.0.0
+135.76.0.0    B        135.76.0.0/16   255.255.0.0
+
+
+
+Network portion   Host portion
+a.b.c.d/32        a.b.c.d/24
+
+
+IP Conversion
+----------------------
+Decimal IP - 192.168.5.0 - IPV4
+        - 32 bit
+        - 8bit.8bit.8bit.8bit
+        - 8 bits = 1 byte
+        - 32 bit IP = 4 byte IP
+        - IP Class c
+        - subnet mask 255.255.255.0
+        - CIDR 192.168.5.0/24
+
+Decimal Number 347
+place value of 7 = ones
+place value of 4 = tens
+place value of 3 = hundreds
+
+
+10^0 = 1
+10^1 = 10
+10^2 = 100
+
+7 + 40 +300 = 347
+
+
+Binary Numbers
+10101010 - 8 bit
+
+2^0 = 1
+2^1 = 2
+2^2 = 4
+2^3 = 8
+2^4 = 16
+2^5 = 32
+2^6 = 64
+2^7 = 128 
+
+128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+
+
+
+Convert 192.168.5.0 to binary 
+-----------------------------
+ 
+128  64  32  16  8  4  2  1
+
+
+Ans = 11000000.10101000.00000101.00000000
+
+
+Convert 11000000.10101000.00000101.00000000 into Decimal
+------------------------------------------------------------
+
+128  64  32  16  8  4  2  1
+
+Ans = 192.168.5.0
+
+Create a subnet
+- Class - C
+- Subnet Mask - 255.255.255.0
+- Cidr range - 192.168.5.0/24
+- Convert to binary - 11000000.10101000.00000101.00000000
+2^8 = 256 - 2 =  254
+
+Create 4 subnets
+
+128  64  32  16  8  4  2  1
+256  128 64   32 16 8  4  2
+
+in order to create 4 subnets
+binay IP = 11000000.10101000.00000101.11000000
+
+number of hosts = 2^n - 2 = 2^6 = 64 -2 = 62
+subnet mask = 255.255.255.192
+number of networks = 2n
+
+128  64  32  16  8  4  2  1
+1    1   0   0   0  0  0  0
+
+4 subnets
+------------
+1st Subnet = 192.168.5.0 - 192.168.5.63
+2nd Subnet = 192.168.5.64 - 192.168.5.127
+3rd Subnet = 192.168.5.128 - 192.168.5.191
+4th Subnet = 192.168.5.192 - 192.168.5.256
