@@ -1,4 +1,4 @@
 
 
 echo "How are you doing today"
-am much beter now
+echo 'am much beter now'
